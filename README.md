@@ -42,5 +42,6 @@ git push -u origin main
 
 ## Make it live (free)
 
-On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at `https://agondezejoshuasamuelops-OPS.github.io/portfolio/`.
-Access the repo at  `https://agondezejoshuasamueloops-OPS.github.io` 
+On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at
+`https://agondezejoshuasamuel-opsops.github.io/Portfolio-website/`.
+Access the repo at  `https://github.com/agondezejoshuasamueloops-OPS/Portfolio-website/`.
