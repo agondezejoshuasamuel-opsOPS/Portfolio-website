@@ -1,6 +1,7 @@
 # My Portfolio
 
 A simple portfolio site. Just HTML, CSS, and a little JavaScript.
+My GitHub account: `https://github.com/agondezejoshuasamuel-opsOPS`
 
 ## Folders
 
