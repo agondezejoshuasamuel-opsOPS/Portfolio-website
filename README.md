@@ -1,15 +1,15 @@
 # My Portfolio
 
-A simple portfolio site. No build step. Just HTML, CSS, and a little JavaScript.
+A simple portfolio site. Just HTML, CSS, and a little JavaScript.
 
 ## Folders
 
 ```
-portfolio/
+_/
 ├── index.html          the page
 ├── css/style.css       colors, fonts, layout
 ├── js/main.js          project filter and footer year
-├── assets/images/      put your screenshots here
+├── assets/images/      screenshots
 ├── .gitignore
 └── README.md
 ```
@@ -41,6 +41,5 @@ git push -u origin main
 
 ## Make it live (free)
 
-On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at `https://YOUR-USERNAME.github.io/portfolio/`.
-
-Tip: name the repo `YOUR-USERNAME.github.io` to get the shorter link `https://YOUR-USERNAME.github.io`.
+On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at `https://agondezejoshuasamueloops-OPS.github.io/portfolio/`.
+Access the repo at  `https://agondezejoshuasamueloops-OPS.github.io` 
