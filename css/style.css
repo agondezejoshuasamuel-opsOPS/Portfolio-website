@@ -1,0 +1,64 @@
+:root{--paper:#eaf1fa;--line:#cddbef;--ink:#15233b;--soft:#4b5a75;--tape:#f7d154;--pink:#e0436b;--blue:#2f5fe0;--head:"Bricolage Grotesque",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;font:18px/1.7 "Newsreader",Georgia,serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
+a{color:inherit;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:4px}
+a:hover{text-decoration-color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem 1rem;z-index:9}
+
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem 1.5rem;padding-top:1.25rem}
+.brand{font:800 1.3rem var(--head);text-decoration:none}
+nav{display:flex;gap:1.25rem;font:600 1rem var(--head)}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:5px}
+
+.btn,.chip{font:600 .95rem var(--head);border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:999px;padding:.45rem 1.1rem;text-decoration:none;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover,.chip:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn.main{background:var(--tape)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff}
+
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);margin-bottom:1.25rem}
+.hero p{max-width:34rem;margin:0 0 1.75rem}
+.actions{display:flex;gap:1rem;flex-wrap:wrap}
+.note{background:var(--tape);border:2px solid var(--ink);box-shadow:6px 7px 0 var(--ink);padding:1.4rem 1.4rem 1.6rem;transform:rotate(2.5deg);animation:drop .7s cubic-bezier(.2,.8,.3,1.2) both}
+.note h2{font-size:1.5rem;margin-bottom:.5rem}
+.note dl{margin:0}
+.note dt{font:700 .95rem var(--head);margin-top:.7rem}
+.note dd{margin:0;line-height:1.4}
+@keyframes drop{from{opacity:0;transform:translateY(-40px) rotate(-9deg)}}
+
+section{padding:3rem 0}
+.title{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:.5rem}
+.sub{color:var(--soft);margin:0 0 1.25rem}
+.filters{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1rem}
+#count{margin-bottom:2.5rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2.5rem 2rem;list-style:none;margin:0;padding:0}
+.card{--tilt:-1deg;position:relative;background:#fff;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:1.6rem 1.3rem 1.3rem;transform:rotate(var(--tilt));transition:transform .2s}
+.card:nth-child(even){--tilt:1.2deg}
+.card:hover,.card:focus-within{transform:rotate(0)}
+.card::before{content:"";position:absolute;top:-13px;left:50%;width:76px;height:24px;margin-left:-38px;background:rgba(247,209,84,.9);border:1px solid rgba(21,35,59,.25);transform:rotate(-3deg)}
+.card img{display:block;width:100%;border:2px solid var(--ink);margin-bottom:1rem}
+.card h3{font-size:1.4rem;margin-bottom:.4rem}
+.card p{margin:0 0 .9rem;line-height:1.55}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0 0 1rem;padding:0;font:600 .8rem var(--head)}
+.tags li{border:1.5px dashed var(--soft);padding:.1rem .6rem;border-radius:999px}
+.links{display:flex;gap:1.1rem;font:700 .95rem var(--head)}
+
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:2.5rem;background:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:2rem}
+.about p{margin:0 0 1rem;max-width:36rem}
+.tools h3{font-size:1.3rem;margin-bottom:.5rem}
+.tools ul{list-style:none;margin:0;padding:0;font:600 1rem var(--head)}
+.tools li{padding:.45rem 0;border-bottom:1.5px dashed #9fb2d1}
+
+.mail{display:inline-block;font:800 clamp(1.4rem,5.5vw,3rem) var(--head);letter-spacing:-.02em;margin:.5rem 0 1.25rem;word-break:break-word}
+.social{display:flex;gap:1.5rem;font:700 1.05rem var(--head);list-style:none;padding:0;margin:0}
+footer{padding:2rem 0 3rem;color:var(--soft);font-size:.95rem}
+
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero{padding:2.5rem 0}.note{max-width:20rem}.about{padding:1.4rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
