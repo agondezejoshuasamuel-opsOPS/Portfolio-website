@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Web Developer</title>
+  <meta name="description" content="Portfolio of Your Name, a web developer who builds small, clear things for the web.">
+  <meta name="theme-color" content="#eaf1fa">
+  <meta property="og:title" content="Your Name | Web Developer">
+  <meta property="og:description" content="Small, clear things for the web.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23f7d154%22/><text x=%2250%22 y=%2274%22 font-size=%2266%22 text-anchor=%22middle%22>✎</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to my work</a>
+
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#top">Your Name</a>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <h1>I build small, clear things for the web.</h1>
+        <p>Hi, I'm Your Name. I'm a web developer in Your City. I make pages that load fast, read well, and work on any phone.</p>
+        <div class="actions">
+          <a class="btn main" href="#work">See my work</a>
+          <a class="btn" href="#contact">Say hello</a>
+        </div>
+      </div>
+      <aside class="note" aria-label="What I'm doing now">
+        <h2>Right now</h2>
+        <dl>
+          <dt>Learning</dt><dd>TypeScript</dd>
+          <dt>Building</dt><dd>A recipe app for my family</dd>
+          <dt>Open to</dt><dd>Freelance jobs and full-time roles</dd>
+        </dl>
+      </aside>
+    </div>
+
+    <section id="work">
+      <h2 class="title">Things I made</h2>
+      <p class="sub">Tap a filter to see one kind of project.</p>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="web" aria-pressed="false">Websites</button>
+        <button class="chip" data-filter="app" aria-pressed="false">Apps</button>
+        <button class="chip" data-filter="design" aria-pressed="false">Design</button>
+      </div>
+      <p id="count" class="sub" aria-live="polite"></p>
+
+      <ul class="grid">
+        <!-- To add a screenshot, put it in assets/images and add this line inside a card:
+             <img src="assets/images/my-shot.jpg" alt="Describe the picture" loading="lazy"> -->
+        <li class="card" data-type="app">
+          <h3>Pocket Budget</h3>
+          <p>A simple app to track what you spend each day. It works with no sign-up and saves on your device.</p>
+          <ul class="tags"><li>JavaScript</li><li>Local storage</li></ul>
+          <div class="links"><a href="#">Live site</a><a href="#">Code</a></div>
+        </li>
+        <li class="card" data-type="web">
+          <h3>Corner Bakery</h3>
+          <p>A fast, friendly website for a local shop, with the menu, hours, and a map on one page.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+          <div class="links"><a href="#">Live site</a><a href="#">Code</a></div>
+        </li>
+        <li class="card" data-type="app">
+          <h3>Trail Notes</h3>
+          <p>A hiking log. Save the date, the distance, and a short note about each walk.</p>
+          <ul class="tags"><li>React</li><li>Node.js</li></ul>
+          <div class="links"><a href="#">Live site</a><a href="#">Code</a></div>
+        </li>
+        <li class="card" data-type="design">
+          <h3>Poster Pack</h3>
+          <p>Twelve bold posters for a neighborhood music night, made to print and to share online.</p>
+          <ul class="tags"><li>Figma</li><li>Print</li></ul>
+          <div class="links"><a href="#">See the set</a></div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2 class="title">About me</h2>
+      <div class="about">
+        <div>
+          <p>I started coding when I made a fan page for my favorite band. I have been making websites ever since.</p>
+          <p>I care about clear words, big buttons, and pages that work for everyone. I test on a real phone before I call anything done.</p>
+          <p>Away from my desk, you can find me hiking, or baking bread that is a little too dark.</p>
+        </div>
+        <div class="tools">
+          <h3>Tools I use</h3>
+          <ul>
+            <li>HTML and CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git and GitHub</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="title">Say hello</h2>
+      <p class="sub">Have a project or a job in mind? Write to me. I answer within two days.</p>
+      <a class="mail" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <ul class="social">
+        <li><a href="https://github.com/your-username">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/your-username">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; <span id="year">2026</span> Your Name. Made by hand with HTML, CSS, and a little JavaScript.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
