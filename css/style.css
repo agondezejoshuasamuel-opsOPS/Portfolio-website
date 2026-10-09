@@ -1,14 +1,14 @@
 :root{--paper:#eaf1fa;--line:#cddbef;--ink:#15233b;--soft:#4b5a75;--tape:#f7d154;--pink:#e0436b;--blue:#2f5fe0;--head:"Bricolage Grotesque",system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;font:18px/1.7 "Newsreader",Georgia,serif}
+body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:12px 12px;font:18px/1.7 "Newsreader",Georgia,serif}
 .wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
 h1,h2,h3{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
 a{color:inherit;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:4px}
 a:hover{text-decoration-color:var(--blue)}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .skip{position:absolute;left:-999px}
-.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem 1rem;z-index:9}
+.skip:focus{left:1rem;top:1rem;background:#ffa;padding:.5rem 1rem;z-index:9}
 
 header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem 1.5rem;padding-top:1.25rem}
 .brand{font:800 1.3rem var(--head);text-decoration:none}
@@ -19,7 +19,7 @@ nav a:hover{text-decoration:underline;text-decoration-color:var(--pink);text-dec
 .btn,.chip{font:600 .95rem var(--head);border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:999px;padding:.45rem 1.1rem;text-decoration:none;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s}
 .btn:hover,.chip:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
 .btn.main{background:var(--tape)}
-.chip[aria-pressed="true"]{background:var(--ink);color:#fff}
+.chip[aria-pressed="true"]{background:var(--ink);color:#faf}
 
 .hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
 .hero h1{font-size:clamp(2.6rem,7vw,4.8rem);margin-bottom:1.25rem}
@@ -39,7 +39,7 @@ section{padding:3rem 0}
 #count{margin-bottom:2.5rem}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2.5rem 2rem;list-style:none;margin:0;padding:0}
-.card{--tilt:-1deg;position:relative;background:#fff;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:1.6rem 1.3rem 1.3rem;transform:rotate(var(--tilt));transition:transform .2s}
+.card{--tilt:-1deg;position:relative;background:#dfa;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:1.6rem 1.3rem 1.3rem;transform:rotate(var(--tilt));transition:transform .2s}
 .card:nth-child(even){--tilt:1.2deg}
 .card:hover,.card:focus-within{transform:rotate(0)}
 .card::before{content:"";position:absolute;top:-13px;left:50%;width:76px;height:24px;margin-left:-38px;background:rgba(247,209,84,.9);border:1px solid rgba(21,35,59,.25);transform:rotate(-3deg)}
