@@ -6,7 +6,7 @@ body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-g
 h1,h2,h3{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
 a{color:inherit;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:4px}
 a:hover{text-decoration-color:var(--blue)}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .skip{position:absolute;left:-999px}
 .skip:focus{left:1rem;top:1rem;background:#ffa;padding:.5rem 1rem;z-index:9}
 
