@@ -15,13 +15,6 @@ _/
 └── README.md
 ```
 
-## Make it yours
-
-1. Open `index.html` and replace "Your Name", "Your City", and the email.
-2. Change the four sample projects. Copy a `<li class="card">` block to add more.
-3. Use `data-type="web"`, `"app"`, or `"design"` on each card so the filter works.
-4. Change colors at the top of `css/style.css` (the `:root` part).
-
 ## See it on your computer
 
 Double-click `index.html`. Or run `python3 -m http.server` in this folder and open `http://localhost:8000`.
@@ -40,7 +33,7 @@ git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
 git push -u origin main
 ```
 
-## Make it live (free)
+## Make it live 
 
 On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at
 `https://agondezejoshuasamuel-opsops.github.io/Portfolio-website/`.
