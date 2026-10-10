@@ -62,3 +62,19 @@ footer{padding:2rem 0 3rem;color:var(--soft);font-size:.95rem}
 
 @media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero{padding:2.5rem 0}.note{max-width:20rem}.about{padding:1.4rem}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+.hero-side{display:flex;flex-direction:column;gap:2rem}
+
+.portrait{
+  --nonagon:polygon(50% 0%,82.14% 11.7%,99.24% 41.32%,93.3% 75%,67.1% 96.98%,32.9% 96.98%,6.7% 75%,0.76% 41.32%,17.86% 11.7%);
+  width:min(260px,70vw);
+  margin-left:auto;
+  filter:drop-shadow(6px 6px 0 var(--ink));
+}
+.nonagon{padding:5px;background:var(--ink);clip-path:var(--nonagon)}
+.nonagon img{
+  display:block;width:100%;aspect-ratio:1;
+  object-fit:cover;object-position:center 25%;
+  clip-path:var(--nonagon);
+}
+
+@media(max-width:760px){.portrait{margin:0 auto}}
