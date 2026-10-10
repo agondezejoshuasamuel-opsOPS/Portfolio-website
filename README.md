@@ -2,7 +2,7 @@
 
 A simple portfolio site. Just HTML, CSS, and a little JavaScript.
 My GitHub account: `https://github.com/agondezejoshuasamuel-opsOPS`
-
+LinkedIn: `https://www.linkedin.com/in/agondeze-joshua-samuel-907b0837a/`
 ## Folders
 
 ```
