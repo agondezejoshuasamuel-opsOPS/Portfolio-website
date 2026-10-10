@@ -1,7 +1,7 @@
 :root{--paper:#eaf1fa;--line:#cddbef;--ink:#15233b;--soft:#4b5a75;--tape:#f7d154;--pink:#e0436b;--blue:#2f5fe0;--head:"Bricolage Grotesque",system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:12px 12px;font:18px/1.7 "Newsreader",Georgia,serif}
+body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(60deg,var(--line) 1px,transparent 1px);background-size:12px 12px;font:30px/1.7 "Newsreader",Georgia,serif}
 .wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
 h1,h2,h3{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0}
 a{color:inherit;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:4px}
@@ -14,12 +14,12 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 .brand{font:800 1.3rem var(--head);text-decoration:none}
 nav{display:flex;gap:1.25rem;font:600 1rem var(--head)}
 nav a{text-decoration:none}
-nav a:hover{text-decoration:underline;text-decoration-color:var(--pink);text-decoration-thickness:3px;text-underline-offset:5px}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--blue);text-decoration-thickness:3px;text-underline-offset:5px}
 
 .btn,.chip{font:600 .95rem var(--head);border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:999px;padding:.45rem 1.1rem;text-decoration:none;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s}
 .btn:hover,.chip:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
 .btn.main{background:var(--tape)}
-.chip[aria-pressed="true"]{background:var(--ink);color:#faf}
+.chip[aria-pressed="true"]{background:var(--ink);color:#235f45}
 
 .hero{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
 .hero h1{font-size:clamp(2.6rem,7vw,4.8rem);margin-bottom:1.25rem}
@@ -41,7 +41,7 @@ section{padding:3rem 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2.5rem 2rem;list-style:none;margin:0;padding:0}
 .card{--tilt:-1deg;position:relative;background:#dfa;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:1.6rem 1.3rem 1.3rem;transform:rotate(var(--tilt));transition:transform .2s}
 .card:nth-child(even){--tilt:1.2deg}
-.card:hover,.card:focus-within{transform:rotate(0)}
+.card:hover,.card:focus-within{transform:rotate(10)}
 .card::before{content:"";position:absolute;top:-13px;left:50%;width:76px;height:24px;margin-left:-38px;background:rgba(247,209,84,.9);border:1px solid rgba(21,35,59,.25);transform:rotate(-3deg)}
 .card img{display:block;width:100%;border:2px solid var(--ink);margin-bottom:1rem}
 .card h3{font-size:1.4rem;margin-bottom:.4rem}
@@ -50,7 +50,7 @@ section{padding:3rem 0}
 .tags li{border:1.5px dashed var(--soft);padding:.1rem .6rem;border-radius:999px}
 .links{display:flex;gap:1.1rem;font:700 .95rem var(--head)}
 
-.about{display:grid;grid-template-columns:1.6fr 1fr;gap:2.5rem;background:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:2rem}
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:2.5rem;background:#b3b3b3;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:2rem}
 .about p{margin:0 0 1rem;max-width:36rem}
 .tools h3{font-size:1.3rem;margin-bottom:.5rem}
 .tools ul{list-style:none;margin:0;padding:0;font:600 1rem var(--head)}
