@@ -29,12 +29,14 @@ git init
 git add .
 git commit -m "First version of my portfolio"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/portfolio.git
+git remote add origin https://github.com/USERNAME/portfolio.git
 git push -u origin main
 ```
 
 ## Make it live 
 
 On GitHub, go to **Settings > Pages**. Under "Build and deployment", pick **Deploy from a branch**, then choose `main` and `/ (root)`. Save. In a minute your site is at
-`https://agondezejoshuasamuel-opsops.github.io/Portfolio-website/`.
+```
+https://agondezejoshuasamuel-opsops.github.io/Portfolio-website/
+```
 Access the repo at  `https://github.com/agondezejoshuasamueloops-OPS/Portfolio-website/`.
