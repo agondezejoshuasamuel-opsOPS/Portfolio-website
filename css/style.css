@@ -60,8 +60,7 @@ section{padding:3rem 0}
 .social{display:flex;gap:1.5rem;font:800 1.05rem var(--head);list-style:none;padding:0;margin:0}
 footer{padding:2rem 0 3rem;color:var(--soft);font-size:.95rem}
 
-@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero{padding:2.5rem 0}.note{max-width:20rem}.about{padding:1.4rem}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
 .hero-side{display:flex;flex-direction:column;gap:2rem}
 
 .portrait{
@@ -78,3 +77,6 @@ footer{padding:2rem 0 3rem;color:var(--soft);font-size:.95rem}
 }
 
 @media(max-width:760px){.portrait{margin:0 auto}}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero{padding:2.5rem 0}.note{max-width:20rem}.about{padding:1.4rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
